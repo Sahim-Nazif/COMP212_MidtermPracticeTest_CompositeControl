@@ -13,7 +13,15 @@ namespace COMP212_MidtermPracticeTest_CompositeControl
     public partial class UserCompositeControl : UserControl
     {
 
-        
+        public RadioButton Male
+        {
+            get => rdbtnMale;
+        }
+        public RadioButton Female
+        {
+            get => rdbtnFemale;
+        }
+
         public UserCompositeControl()
         {
             InitializeComponent();

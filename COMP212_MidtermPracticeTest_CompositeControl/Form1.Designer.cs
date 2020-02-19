@@ -28,20 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userCompositeControl1 = new COMP212_MidtermPracticeTest_CompositeControl.UserCompositeControl();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnDiscount = new System.Windows.Forms.Button();
             this.txtAge = new System.Windows.Forms.TextBox();
+            this.userCompositeControl1 = new COMP212_MidtermPracticeTest_CompositeControl.UserCompositeControl();
+            this.lblshow = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // userCompositeControl1
-            // 
-            this.userCompositeControl1.Location = new System.Drawing.Point(50, 12);
-            this.userCompositeControl1.Name = "userCompositeControl1";
-            this.userCompositeControl1.Size = new System.Drawing.Size(104, 121);
-            this.userCompositeControl1.TabIndex = 0;
             // 
             // label1
             // 
@@ -77,6 +71,7 @@
             this.btnDiscount.TabIndex = 4;
             this.btnDiscount.Text = "Discount Rate";
             this.btnDiscount.UseVisualStyleBackColor = true;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // txtAge
             // 
@@ -85,11 +80,28 @@
             this.txtAge.Size = new System.Drawing.Size(147, 20);
             this.txtAge.TabIndex = 5;
             // 
+            // userCompositeControl1
+            // 
+            this.userCompositeControl1.Location = new System.Drawing.Point(50, 12);
+            this.userCompositeControl1.Name = "userCompositeControl1";
+            this.userCompositeControl1.Size = new System.Drawing.Size(104, 121);
+            this.userCompositeControl1.TabIndex = 0;
+            // 
+            // lblshow
+            // 
+            this.lblshow.AutoSize = true;
+            this.lblshow.Location = new System.Drawing.Point(301, 260);
+            this.lblshow.Name = "lblshow";
+            this.lblshow.Size = new System.Drawing.Size(38, 13);
+            this.lblshow.TabIndex = 6;
+            this.lblshow.Text = "Name:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 336);
+            this.Controls.Add(this.lblshow);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.btnDiscount);
             this.Controls.Add(this.txtName);
@@ -111,6 +123,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnDiscount;
         private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label lblshow;
     }
 }
 
