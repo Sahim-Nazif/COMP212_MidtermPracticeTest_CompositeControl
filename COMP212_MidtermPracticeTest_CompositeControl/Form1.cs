@@ -29,7 +29,7 @@ namespace COMP212_MidtermPracticeTest_CompositeControl
 
             if (userCompositeControl1.Male.Checked==true)
             {
-             if (age==18 || age<=25)
+             if (age==18 && age<=25)
                 {
                     MessageBox.Show("Hi " + name + "You are " + age + " years old " + userCompositeControl1.Male.Text + " and therefore, your discount rate is 20%");
                 }
@@ -37,14 +37,22 @@ namespace COMP212_MidtermPracticeTest_CompositeControl
                 {
                     MessageBox.Show("Hi " + name + "You are  " + age + " years old " + userCompositeControl1.Male.Text + " and therefore, your discount rate is 22% ");
                 }
+            
             }
             
             else if(userCompositeControl1.Female.Checked==true)
             {
-                lblshow.Text = userCompositeControl1.Female.Text;
-            }
+                if (age == 18 && age <= 25)
+                {
+                    MessageBox.Show("Hi " + name + "You are " + age + " years old " + userCompositeControl1.Female.Text + " and therefore, your discount rate is 20%");
+                }
+               else if(age>=26)
+                {
+                    MessageBox.Show("Hi " + name + "You are " + age + " years old " + userCompositeControl1.Female.Text + " and therefore, your discount rate is 25%");
+                }
+             }
+           
 
-            
         }
     }
 }
